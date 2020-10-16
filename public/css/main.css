@@ -1,12 +1,15 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800&display=swap");
+
 * {
   margin: 0;
   padding: 0;
+  outline: none;
   box-sizing: border-box;
 }
 
 body {
   height: 100vh;
-  color: white;
+  color: #fff;
   background: #ebf2f5;
 }
 
@@ -18,5 +21,5 @@ body,
 input,
 button,
 textarea {
-  font: 400 1.8rem/1 "Nunito", sans-serif;
+  font: 400 1.8rem/1 "Nunit", sans-serif;
 }

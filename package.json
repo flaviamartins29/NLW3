@@ -8,5 +8,9 @@
   },
   "keywords": [],
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "@types/google-map-react": "^2.1.0",
+    "i": "^0.3.6"
+  }
 }
