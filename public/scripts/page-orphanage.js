@@ -5,21 +5,26 @@ const options = {
     scrollWheelZoom: false,
     zoomControl: false
 }
+const lat = document.querySelector('span[data-lat]').dataset.lat
+const lng = document.querySelector('span[data-lng]').dataset.lng
 
-const map = L.map('mapid', options).setView([-23.5469235,-46.9063989], 15);
+console.log(lat, lng)
+
+const map = L.map('mapid', options).setView([lat, lng], 15);
 
 L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png').addTo(map);
 
 //create icon
 const icon = L.icon({
-    iconUrl: "./public/images/map-marker.svg",
+    iconUrl: "/images/map-marker.svg",
     iconSize: [58, 68],     //width height
     iconAnchor: [29, 68],   //what point will anchor on the map
     popupAnchor: [170,2]    //whar point popup will anchor on the icon
 });
 
+
 L
-    .marker([-23.5469235,-46.9063989], { icon })
+    .marker([lat, lng], { icon })
     .addTo(map);
 
     /*function selectImage(event) {

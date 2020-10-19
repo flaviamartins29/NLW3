@@ -1,16 +1,22 @@
 {
-  "name": "NLW3",
+  "name": "nlwtres",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "dev": "nodemon src/server.js"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
     "@types/google-map-react": "^2.1.0",
-    "i": "^0.3.6"
-  }
+    "express": "^4.17.1",
+    "hbs": "^4.1.1",
+    "i": "^0.3.6",
+    "nodemon": "^2.0.5",
+    "sqlite-async": "^1.1.0"
+  },
+  "repository": "https://github.com/flaviamartins29/NLW3.git",
+  "devDependencies": {}
 }

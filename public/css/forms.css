@@ -10,7 +10,7 @@ form{
     padding: 8rem;
 }
 fieldset{
-    border: 0;
+    border: none;
 }
 fieldset + fieldset{
     margin-top: 8rem;
@@ -91,19 +91,25 @@ fieldset legend {
 
  .new-upload {
     position: relative;
-
  }
+
+ .new-upload + .new-upload {
+     margin-top: 2.4rem;
+ }
+
 .new-upload span {
     position: absolute;
-    right: 12px;
+    right: 10px;
     bottom: 14px;
-    background: #ffffff;
+    background: #FFFFFF;
     border: 1px solid #D3E2E5;
-    display: flex;
+    box-sizing: border-box;
     border-radius: 10px;
     padding: .6rem;
-
+    display: flex;
     cursor: pointer;
+
+    
 }
 
  /* 41413062 /4620*/
